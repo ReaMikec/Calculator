@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript Calculator</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<div class="naslov">
+		<h1>CALCULATOR</h1>
+	</div>
+	<div class="calcBody">
+	<form name="Calc">
+		<table border="4" bgcolor=#FF0097>
+		<tr>
+			<td>
+				<input type="text" name="Numbers" size="16" id="result">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" id="bttStyle1first" value="1" onClick="document.Calc.Numbers.value+='1'">
+				<input type="button" id="bttStyle1" value="2" onClick="document.Calc.Numbers.value+='2'">
+				<input type="button" id="bttStyle1" value="3" onClick="document.Calc.Numbers.value+='3'">
+				<input type="button" id="bttStyle1" value="+" onClick="document.Calc.Numbers.value+='+'">
+			<br>
+
+				<input type="button" id="bttStyle1first" value="4" onClick="document.Calc.Numbers.value+='4'">
+				<input type="button" id="bttStyle1" value="5" onClick="document.Calc.Numbers.value+='5'">
+				<input type="button" id="bttStyle1" value="6" onClick="document.Calc.Numbers.value+='6'">
+				<input type="button" id="bttStyle1" value="-" onClick="document.Calc.Numbers.value+='-'">
+			<br>
+				<input type="button" id="bttStyle1first" value="7" onClick="document.Calc.Numbers.value+='7'">
+				<input type="button" id="bttStyle1" value="8" onClick="document.Calc.Numbers.value+='8'">
+				<input type="button" id="bttStyle1" value="9" onClick="document.Calc.Numbers.value+='9'">
+				<input type="button" id="bttStyle1" value="*" onClick="document.Calc.Numbers.value+='*'">
+			<br>
+			    <input type="button" id="bttStyle2first" value="  C  " onclick="document.Calc.Numbers.value=''">
+				<input type="button" id="bttStyle2" value="0" onClick="document.Calc.Numbers.value+='0'">
+			<input type="button" id="bttStyle2" value="=" onClick="document.Calc.Numbers.value = eval(Calc.Numbers.value)">
+				<input type="button" id="bttStyle2" value="/" onClick="document.Calc.Numbers.value+='/'">
+
+			</td>
+		</tr>
+</form>
+</div>
+</body>
+</html>
